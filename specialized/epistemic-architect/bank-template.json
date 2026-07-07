@@ -1,0 +1,69 @@
+{
+  "version": "1",
+  "bank": {
+    "retain_mission": "Extract research findings, methodology details, statistical analyses, replication outcomes, effect sizes with confidence intervals, prior justifications, posterior updates, adversarial collaboration results, zombie facts identified for sunset, epistemic audits, and meta-scientific observations. Always capture the full evidential tier (foundational/exploratory/policy), sample characteristics, and boundary conditions.",
+    "observations_mission": "Observations are stable facts about the knowledge graph: calibrated probabilities held for specific claims, replication status of findings, effect sizes with intervals, methodological audits completed, zombie facts flagged for sunset, epistemic interventions implemented, and cross-domain knowledge integrations established. Ignore one-off noise, uncalibrated speculation, and findings without uncertainty bounds."
+  },
+  "mental_models": [
+    {
+      "id": "knowledge-graph-state",
+      "name": "Dynamic Knowledge Graph State",
+      "max_tokens": 8192,
+      "source_query": "What is the current state of the knowledge graph? Which claims are held at what calibrated probabilities, what replication status do they have, and what are their effect sizes with confidence intervals?",
+      "trigger": {
+        "refresh_after_consolidation": true,
+        "mode": "delta",
+        "exclude_mental_models": true,
+        "fact_types": ["observation"]
+      }
+    },
+    {
+      "id": "methodology-audits",
+      "name": "Methodology Audit Ledger",
+      "max_tokens": 4096,
+      "source_query": "What methodological audits have been completed? Include statistical model tracing to philosophical assumptions, measurement validity checks, and researcher psychology failure modes identified with countermeasures applied.",
+      "trigger": {
+        "refresh_after_consolidation": true,
+        "mode": "delta",
+        "exclude_mental_models": true,
+        "fact_types": ["observation"]
+      }
+    },
+    {
+      "id": "zombie-fact-register",
+      "name": "Zombie Fact Register & Sunset Protocols",
+      "max_tokens": 4096,
+      "source_query": "Which findings have been flagged as zombie facts or outdated theories? What is the sunset protocol status for each — automated meta-analysis results, citation network analysis, and de-implementation progress?",
+      "trigger": {
+        "refresh_after_consolidation": true,
+        "mode": "delta",
+        "exclude_mental_models": true,
+        "fact_types": ["observation"]
+      }
+    },
+    {
+      "id": "epistemic-interventions",
+      "name": "Epistemic Interventions & Institutional Reforms",
+      "max_tokens": 4096,
+      "source_query": "What epistemic interventions and institutional reforms have been implemented? Include adversarial collaborations conducted, open science infrastructure deployed, replication programs run, and editorial reforms advanced.",
+      "trigger": {
+        "refresh_after_consolidation": true,
+        "mode": "delta",
+        "exclude_mental_models": true,
+        "fact_types": ["observation"]
+      }
+    },
+    {
+      "id": "synthetic-disagreement-log",
+      "name": "Synthetic Disagreement & Crucial Experiments Log",
+      "max_tokens": 4096,
+      "source_query": "What synthetic disagreements have been orchestrated? Include the adversarial personas engaged, crucial experiments co-designed, hidden assumptions revealed, and epistemic landscape boundaries mapped.",
+      "trigger": {
+        "refresh_after_consolidation": true,
+        "mode": "delta",
+        "exclude_mental_models": true,
+        "fact_types": ["observation"]
+      }
+    }
+  ]
+}
